@@ -28,13 +28,14 @@ h1 {
 	background: #00696e;
 	box-shadow: 0px 0px 15px #6d6d6d;
 }
-thead, tr {
-	border: 2px solid #003645;
+thead {
+	border-top: 2px solid;
 }
 
 table {
 	margin-top:20px;
 }
+
 .container ul li {
 	list-style: none;
 }
