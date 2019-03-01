@@ -9,7 +9,7 @@
 				<table class="table">
 					@if ($message = Session::get('message'))
 					<div class="alert alert-success">
-						{{$message}}
+					{{$message}}
 					</div>
 					@endif
 					<thead>

@@ -10,6 +10,7 @@ class Posts extends Model
 	// public $timestamps = false;
 	public $table = "posts";
 	protected $fillable = [
+	'image',
 	'title',
 	'author',
 	'content',

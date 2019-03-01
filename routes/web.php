@@ -10,11 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-	return view('welcome');
-});
-Route::get('/', function() {
-	return redirect()->route('users.index');
-});
+// Route::get('/', function () {
+// 	return view('welcome');
+// });
+Route::get('welcome', 'HomePageController@home')->name('welcome');
+Route::get('/', 'HomeController@index')->name('welcome');
+// Route::get('/', function() {
+// 	return redirect()->route('users.index');
+// });
 Route::resource('posts', 'PostController');
-Route::resource('users', 'PostController');
+
+Route::get('/uploadfile', 'UploadfileController@index');
+Route::post('/uploadfile', 'UploadfileController@upload');

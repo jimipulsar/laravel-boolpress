@@ -139,6 +139,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+         Intervention\Image\ImageServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         JeroenNoten\LaravelAdminLte\ServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
@@ -190,7 +191,7 @@ return [
     */
 
     'aliases' => [
-
+        'Image' => Intervention\Image\Facades\Image::class,
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,

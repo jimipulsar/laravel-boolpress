@@ -13,7 +13,7 @@
 						<li><strong>Descrizione:</strong> {{$posts->content}}</li>
 						<li><strong>Creato il:</strong> {{ $posts->created_at}}</li>
 					</ul>
-				<a href="{{route('users.index', $posts->id)}}" class="btn btn-primary">Torna indietro</a>
+				<a href="{{route('posts.index', $posts->id)}}" class="btn btn-primary">Torna indietro</a>
 		</div>
 	</div>
 </div>

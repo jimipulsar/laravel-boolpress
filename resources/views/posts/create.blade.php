@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
 <form class="form-contatto-post" action="{{route('posts.store')}}" method="POST">
 	@csrf
 	<div class="form-group">

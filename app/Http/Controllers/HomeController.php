@@ -4,9 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\Posts;
-use \App\Category;
 
-class PostController extends Controller
+class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +15,10 @@ class PostController extends Controller
     public function index()
     {
       $posts = Posts::all();
-      return view('posts.index', compact('posts'));
+      return view('posts.welcome', compact('posts'));
+
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -26,7 +27,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+
     }
 
     /**
@@ -37,14 +38,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-      $newUser = new Posts();
-      $data = $request->all();
-      $newUser->title = $data['title'];
-      $newUser->author = $data['author'];
-      $newUser->content = $data['content'];
-      $newUser->category_id = $data['category_id'];
-      $newUser->save();
-      return redirect()->route('posts.index')->with('message', 'Articolo creato con successo');
+        //
     }
 
     /**
@@ -67,9 +61,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-      $posts = Posts::find($id);
-      return view ('posts.edit', compact('posts'));
-  $post->save()->with('message', 'Articolo modificato con successo');
+        //
     }
 
     /**
@@ -81,11 +73,7 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $user = Posts::find($id);
-      $data = $request->all();
-      $user->update($data);
-      return redirect()->route('posts.index');
-
+        //
     }
 
     /**
@@ -96,8 +84,6 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-      $user = Posts::find($id);
-      $user->delete();
-      return redirect()->route('posts.index');
+        //
     }
 }
