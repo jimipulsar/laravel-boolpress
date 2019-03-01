@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
+<h2 class="terzo-titolo">Aggiungi un articolo</h2>
 <form class="form-contatto-post" action="{{route('posts.store')}}" method="POST">
 	@csrf
 	<div class="form-group">
@@ -20,6 +20,12 @@
 	</div>
 	<div class="form-group">
 		<input type="submit" value="Salva nuovo articolo" class="form-control" id="save">
-	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </form>
 @endsection

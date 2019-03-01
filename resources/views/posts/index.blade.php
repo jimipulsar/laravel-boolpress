@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2>Tutti i post</h2> <h2 class="secondo-titolo"><a href="{{ route ('posts.create')}}" class="btn btn-primary" id="btn-create">Aggiungi nuovo articolo</a></h2>
+				<h2 class="left-head">Tutti i post</h2> <h2 class="right-head"><a href="{{ route ('posts.create')}}" class="btn btn-primary" id="btn-create">Aggiungi nuovo articolo</a></h2>
 				<table class="table">
 					@if ($message = Session::get('message'))
 					<div class="alert alert-success">
@@ -21,7 +21,7 @@
 						<th>Descrizione</th>
 						<th>Creato il</th>
 						<th></th>
-						<th>Operazioni</th>
+						<th>Azioni</th>
 						<th></th>
 					</tr>
 				</thead>

@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="terzo-titolo">Modifica il post {{$posts->title}}</h2>
+				<h3 class="secondo-titolo">Modifica il post</h3> <br> <h2 class="secondo-titolo"><strong>{{$posts->title}}</strong></h2>
 				<form action="{{ route('posts.update', $posts->id)}}" method="POST">
 					@method('PUT')
 					@csrf
@@ -31,6 +31,7 @@
 			</div>
 		</div>
 	</div>
+	</div>
+	</div>
 </div>
-</form>
 @endsection

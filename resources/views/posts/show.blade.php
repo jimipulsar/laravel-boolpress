@@ -14,7 +14,11 @@
 						<li><strong>Creato il:</strong> {{ $posts->created_at}}</li>
 					</ul>
 				<a href="{{route('posts.index', $posts->id)}}" class="btn btn-primary">Torna indietro</a>
+			</div>
 		</div>
 	</div>
+</div>
+</div>
+</div>
 </div>
 @endsection

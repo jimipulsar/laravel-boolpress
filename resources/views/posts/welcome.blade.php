@@ -7,7 +7,7 @@
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4" id="header-background">
         <h2>Tutti i post</h2>
-        <p class="lead">Clicca qui sotto per visualizzare ed effettuare modifiche</p>
+        <p class="lead">Clicca sul pulsante qui sotto per visualizzare tutti gli articoli ed effettuare modifiche</p>
         <a href="{{route('posts.index')}}" class="btn btn-primary btn-lg">Tutti gli articoli</a>
       </header>
 
@@ -36,14 +36,6 @@
       </div>
     </div>
     <!-- /.container -->
-<hr>
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Laravel Boolpress &copy; Designed by Pietro Ricci</p>
-      </div>
-      <!-- /.container -->
-    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
